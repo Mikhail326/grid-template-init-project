@@ -1,0 +1,49 @@
+.about {
+  letter-spacing: 0.055rem;
+
+  background-color: $color-gray-light;
+
+  @include lg-min {
+    padding-top: $gap * 5;
+    padding-bottom: $gap * 5;
+  }
+  @include lg-md {
+    padding-top: $gap * 4;
+    padding-bottom: $gap * 4;
+  }
+  @include md {
+    padding-top: $gap * 3;
+    padding-bottom: $gap * 3;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: $gap;
+    padding-left: $gap;
+
+    @include container;
+    @include lg-min {
+      gap: $gap * 5;
+    }
+    @include lg-md {
+      gap: $gap * 2;
+    }
+    @include md {
+      gap: $gap;
+    }
+    @include sm {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

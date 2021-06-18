@@ -1,0 +1,36 @@
+.about__content {
+  color: $color-gray;
+
+  @include lg-min {
+    font-size: 1.125rem;
+  }
+  & p:first-of-type {
+    position: relative;
+
+    margin-top: -5px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+
+      height: 200px;
+
+      content: "";
+
+      border-right: 2px solid rgba($color-gray, 0.1);
+
+      @include lg-min {
+        right: -50px;
+      }
+      @include lg-md {
+        right: -20px;
+      }
+      @include md-sm {
+        right: -10px;
+      }
+    }
+  }
+  & p:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -28,6 +28,9 @@
       @include md-sm {
         right: -10px;
       }
+      @include sm {
+        display: none;
+      }
     }
   }
   & p:last-of-type {

@@ -17,16 +17,8 @@
   }
   &__title {
     z-index: 1;
-
     margin: 0;
-
     @include abs-position;
-    @include md-min {
-      font-size: 1.25rem;
-    }
-    @include md {
-      font-size: 1.125rem;
-    }
   }
   &__link {
     display: flex;
@@ -42,6 +34,12 @@
 
     font-size: $gap;
     line-height: 1.2;
+    @include md-min {
+      font-size: 1.25rem;
+    }
+    @include md {
+      font-size: 1.11rem;
+    }
   }
   &__image {
     transition: transform 0.5s;

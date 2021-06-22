@@ -821,6 +821,7 @@ a {
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.05);
+  outline: inherit;
 }
 
 .form-item__input:hover, .form-item__input:focus {
@@ -829,55 +830,55 @@ a {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-::-webkit-input-placeholder {
+.form-item ::-webkit-input-placeholder {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   color: rgba(255, 255, 255, 0.2);
 }
 
-::-moz-placeholder {
+.form-item ::-moz-placeholder {
   -moz-transition: color 0.5s;
   transition: color 0.5s;
   color: rgba(255, 255, 255, 0.2);
 }
 
-:-ms-input-placeholder {
+.form-item :-ms-input-placeholder {
   -ms-transition: color 0.5s;
   transition: color 0.5s;
   color: rgba(255, 255, 255, 0.2);
 }
 
-::-ms-input-placeholder {
+.form-item ::-ms-input-placeholder {
   -ms-transition: color 0.5s;
   transition: color 0.5s;
   color: rgba(255, 255, 255, 0.2);
 }
 
-::placeholder {
+.form-item ::placeholder {
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
   color: rgba(255, 255, 255, 0.2);
 }
 
-:hover::-webkit-input-placeholder {
-  color: white;
+.form-item :hover::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-:hover::-moz-placeholder {
-  color: white;
+.form-item :hover::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-:hover:-ms-input-placeholder {
-  color: white;
+.form-item :hover:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-:hover::-ms-input-placeholder {
-  color: white;
+.form-item :hover::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-:hover::placeholder {
-  color: white;
+.form-item :hover::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .posts {
@@ -1121,7 +1122,7 @@ footer {
   .header-navbar__link {
     margin: 10px;
   }
-  .skill-item__title {
+  .skill-item__link {
     font-size: 1.25rem;
   }
 }
@@ -1254,8 +1255,8 @@ footer {
   .header-content__title {
     margin: 0 0 33px 0;
   }
-  .skill-item__title {
-    font-size: 1.125rem;
+  .skill-item__link {
+    font-size: 1.11rem;
   }
   .about {
     padding-top: 60px;

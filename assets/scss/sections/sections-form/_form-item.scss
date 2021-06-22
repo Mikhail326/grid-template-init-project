@@ -20,7 +20,7 @@
     border-color: rgba($color-light, 0);
     border-bottom-color: rgba($color-light, 0.2);
     background-color: rgba($color-light, 0.05);
-
+    outline: inherit;
     @include lg-min {
       font-size: 18px;
     }
@@ -30,19 +30,19 @@
     @include md {
       font-size: 18px;
     }
-  }
-  &__input:hover,
-  &__input:focus {
-    border-color: rgba($color-light, 0.15);
-    border-bottom-color: $color-light;
-    background-color: rgba($color-light, 0.15);
-  }
-}
-::placeholder {
-  transition: color 0.5s;
 
-  color: rgba($color-light, 0.2);
-}
-:hover::placeholder {
-  color: white;
+    &:hover,
+    &:focus {
+      border-color: rgba($color-light, 0.15);
+      border-bottom-color: $color-light;
+      background-color: rgba($color-light, 0.15);
+    }
+  }
+  ::placeholder {
+    transition: color 0.5s;
+    color: rgba($color-light, 0.2);
+  }
+  :hover::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
